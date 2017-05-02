@@ -53,7 +53,7 @@ Since early 2016, Panel and Web Components have powered Mixpanel's most advanced
 
 `npm install --save panel`
 
-If your target environment does not implement HTML custom elements natively, you must supply a polyfill, such as [webcomponents.js](https://github.com/webcomponents/webcomponentsjs).
+If your target environment does not implement HTML Custom Elements v1 natively, you must supply a polyfill, such as [webcomponents.js](https://github.com/webcomponents/webcomponentsjs) or [custom-elements (v1)](https://github.com/webcomponents/custom-elements). The sample applications under [examples/](https://github.com/mixpanel/panel/tree/master/examples) include configuration for polyfills and build systems.
 
 ## Documentation and examples
 
@@ -73,7 +73,7 @@ Browser tests run with Selenium through [web-component-tester](https://github.co
 `npm test`
 
 #### Tunnel to [Sauce Labs](https://saucelabs.com/)
-`npm run build-test && npm run test-browser-sauce`
+`npm run  pretest && npm run build-test && npm run test-browser-sauce`
 
 Set credentials with environment variables `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY`. The default browser/OS matrix is defined in `wct.conf.json`.
 
